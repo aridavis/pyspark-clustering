@@ -36,8 +36,7 @@ df_test = VectorAssembler(inputCols = cols, outputCol = "Vector").transform(df_t
 scaler = StandardScaler(inputCol = "Vector", outputCol = "features")
 df_test = scaler.fit(df_test).transform(df_test)
 
-#Creating Model with 2 Cluster
-kmeans = KMeans().setK(2).setSeed(1)
+kmeans = KMeans().setK(2)
 model = kmeans.fit(df_train)
 # print(model.clusterCenters())
 

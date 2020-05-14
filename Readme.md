@@ -17,7 +17,7 @@ Ketika kita memutuskan untuk mengelompokkan data berdasarkan 3 atribut tersebut,
 Dan pada akhirnya, kita akan mengelompokkan data tersebut menjadi:
 
 | Nomor | Nama | ... | Cluster (Kelompok) |
-| ----- | ---- | ... | ------------------ |
+| ----- | ---- | --- | ------------------ |
 | 1 | Ari | ... | 1 (meskipun yang ini suka olahraga individual, tapi attribut lainnya lebih mendukung kalau data ini berada pada kelompok 1)|
 | 2 | Davis | ... | 1 |
 | 3 | Yuviena | ... | 1 |
