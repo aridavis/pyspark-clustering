@@ -157,12 +157,10 @@ Akurasi di dapat dari rumus
 Kodingannya:
 
 ```
-    predictions = predictions.toPandas()
-    fig = plt.figure()
-    ax = fig.add_subplot(111)
-    plt.scatter(predictions["Algae Concentration"], predictions["Oil Concentration"], c=predictions["prediction"])
-    ax.set_title('Relationship Between Algae Concentration and Oil Concentration in Cluster Prediction')
-    ax.set_xlabel('Algae Concentration')
-    ax.set_ylabel('Oil Concentration')
-    plt.show()
+    c = 0
+    for index, row in predictions.iterrows():
+        if row["Polluted"] == row["prediction"]:
+            c = c + 1
+
+    print("Accuracy: {}%".format(c / len(predictions) * 100))
 ```
